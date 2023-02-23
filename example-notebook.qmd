@@ -14,9 +14,23 @@ Quarto enables you to weave together content and executable code into a finished
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
+#don't do rm(list=ls())
+#don't do setwd it will exist only on machine if you want to clone its annoying to reproduce 
+#for projects^ don't need project does these already better
+#click turn off don't restore .r data in tools global general 
 1 + 1
 ```
 
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+#usethis::use_github_action("render-rmarkdown.yaml")  try to not leave in markdown it is creating infrastructure normally do in console leaving for reference 
+
+
+
+```
 You can add options to executable code like this
 
 ```{r}
